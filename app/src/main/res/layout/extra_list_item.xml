@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants">
+    <ImageView
+        android:id="@+id/extra_image"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_margin="5px"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/extra_tv_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingLeft="15dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:hint="我是ListView的Item布局"/>
+
+    <Button
+        android:id="@+id/restore"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/extra_image"
+        android:layout_marginBottom="21dp"
+        android:layout_toLeftOf="@+id/buy"
+        android:background="#fd8149"
+        android:padding="5dp"
+        android:text="收藏"
+        android:textSize="16sp"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/buy"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/restore"
+        android:layout_alignBottom="@+id/restore"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:background="#ff5001"
+        android:padding="5dp"
+        android:text="加入购物车"
+        android:textSize="16sp"
+        android:textColor="#ffffff"/>
+</RelativeLayout>
+
